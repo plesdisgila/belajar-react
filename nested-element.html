@@ -27,9 +27,7 @@
         children: "Grape",
       });
 
-      const element = React.createElement("ul", {
-        children: [li, li2, li3],
-      });
+      const element = React.createElement("ul", { className: "list" }, "Hello", "JS", "");
 
       ReactDOM.render(element, root);
     </script>
