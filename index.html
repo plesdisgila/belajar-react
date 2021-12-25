@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World!</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script>
+      /** kasih akses **/
+      const root = document.querySelector("#root");
+
+      const p1 = React.createElement("p", {
+        children: "Hello from REACT!!! paragraf 1",
+      });
+
+      const p2 = React.createElement("p", {
+        children: "Hello from REACT!!! paragraf 1",
+      });
+
+      const element = React.createElement("div", {
+        children: [p1, p2],
+      });
+
+      ReactDOM.render(element, root);
+    </script>
+  </body>
+</html>
