@@ -15,19 +15,7 @@
       /** kasih akses **/
       const root = document.querySelector("#root");
 
-      const li = React.createElement("li", {
-        children: "Apple",
-      });
-
-      const li2 = React.createElement("li", {
-        children: "Orange",
-      });
-
-      const li3 = React.createElement("li", {
-        children: "Grape",
-      });
-
-      const element = React.createElement("ul", { className: "list" }, "Hello", "JS", "");
+      const element = React.createElement("ul", { className: "list" }, React.createElement("li", null, "Apple"), React.createElement("li", null, "Orange"), React.createElement("li", null, "Grape"));
 
       ReactDOM.render(element, root);
     </script>
